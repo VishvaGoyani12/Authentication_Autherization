@@ -1,0 +1,21 @@
+﻿@page
+@model RegisterConfirmationModel
+@{
+    ViewData["Title"] = "Register Confirmation";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow rounded-4 p-4 text-center">
+                <h3 class="mb-3">@ViewData["Title"]</h3>
+
+                <p class="alert alert-success">
+                    A confirmation email has been sent to <strong>@Model.Email</strong>. <br />
+                    Please check your inbox and follow the instructions to confirm your account.
+                </p>
+                
+            </div>
+        </div>
+    </div>
+</div>
