@@ -1,9 +1,11 @@
 ﻿using Authentication_Autherization.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
 namespace Authentication_Autherization.Controllers
 {
+    [Authorize(Roles = "User")]
     public class UserController : Controller
     {
         private readonly ILogger<HomeController> _logger;
